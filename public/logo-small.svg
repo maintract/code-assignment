@@ -1,0 +1,27 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="stroke" d="M43.0544 13.9639H65.4989"/>
+  <path class="stroke" d="M43.0544 39.998H65.4989"/>
+  <path class="stroke" d="M43.0544 67.7666H65.4988"/>
+  <path class="fill" d="M150.543 127.674H154.043V120.674H150.543V127.674ZM43.0544 127.674H150.543V120.674H43.0544V127.674Z"/>
+  <path class="fill" d="M150.543 156.312H154.043V149.312H150.543V156.312ZM43.0544 156.312H150.543V149.312H43.0544V156.312Z"/>
+  <path class="fill" d="M150.543 184.081H154.043V177.081H150.543V184.081ZM43.0544 184.081H150.543V177.081H43.0544V184.081Z"/>
+  <path class="stroke" d="M65.499 67.7673C142.733 67.7673 150.543 125.042 150.543 125.042C150.543 125.042 157.485 13.9639 65.499 13.9639"/>
+  <path class="stroke" d="M65.499 39.998C145.336 39.998 150.543 124.174 150.543 124.174"/>
+  <style>
+    .stroke {
+      stroke: #00211F;
+      stroke-width: 7;
+    }
+    .fill {
+      fill: #00211F;
+    }
+    @media (prefers-color-scheme: dark) {
+      .stroke {
+        stroke: #FFFFFF;
+      }
+      .fill {
+        fill: #FFFFFF;
+      }
+    }
+  </style>
+</svg>
