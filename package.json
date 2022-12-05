@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cy:open": "cypress open & npm run dev"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -21,6 +22,7 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "cypress": "^11.2.0",
     "vite": "^3.2.3"
   }
 }
