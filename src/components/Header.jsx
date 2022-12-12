@@ -1,9 +1,9 @@
-import React from "react";
+import {Component} from "react";
 import dropDown from "../assets/dropdown_icon.svg";
 import  NewFile  from "./NewFile";
 import { NavLink} from "react-router-dom";
 
-const Header = () => {
+class Header extends Component {
   state = {
     open: false,
   };
@@ -14,7 +14,7 @@ const Header = () => {
       };
     });
   };
-  render(); {
+  render() {
     return (
       <header>
         <div className="menu">
@@ -55,4 +55,4 @@ const Icon = ({ content, isDropdown, isExtra }) => {
     </span>
   );
 };
-export default { Header, Icon };
+export default  Header;
