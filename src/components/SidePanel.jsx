@@ -1,4 +1,4 @@
-export default function SidePanel() {
+const SidePanel = ()=> {
   return (
     <div className="fam no-phone">
       <div><div>Content</div></div>
@@ -8,3 +8,5 @@ export default function SidePanel() {
     </div>
   )
 }
+
+export default SidePanel

@@ -14,6 +14,21 @@ async function createServer() {
   })
 
   app.use(vite.middlewares)
+  app.use(express.json())
+
+  app.post('/save', (req, res) => {
+    const data = JSON.stringify(req.body)
+    
+    fs.writeFile('./data.json', data, (err) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Error saving data')
+      } else {
+        res.status(200).send('Data saved')
+      }
+    })
+  })
+
   app.use('*', async (req, res, next) => {
     const url = req.originalUrl  
     try {
