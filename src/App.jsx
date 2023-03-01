@@ -1,32 +1,25 @@
-import { useState } from 'react'
-import { createEditor } from 'slate'
-import { Slate, Editable, withReact } from 'slate-react'
-import initialValue from './assets/default_content'
-import Header from './components/Header'
-import SidePanel from './components/SidePanel'
+import React from 'react';
+import { Routes, Route} from 'react-router-dom';
+import New from './pages/New';
+import Open from './pages/Open';
+import Home from './pages/Home';
+import Save from './pages/Save';
+import Login from './pages/Login';
 
-function App() {
-  const [editor] = useState(() => withReact(createEditor()))
+const App = () => {
 
   return (
     <>
-      <Header />
-      <div className="app">
-        <Slate editor={editor} value={initialValue}>
-          <Editable className="slate-editor" />
-        </Slate>
-        <div className="card">
-          <p>
-            Edit and move any file you feel is appropriate
-          </p>
-        </div>
-        <p className="note">
-          Good luck!
-        </p>
-      </div>
-      <SidePanel />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/new" element={<New />} />
+        <Route path="/open" element={<Open />} />
+        <Route path='/save' element={<Save />} />
+      </Routes>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
+
